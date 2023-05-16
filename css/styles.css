@@ -1,0 +1,302 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: #eee;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+/* UTILITY CLASSES */
+
+#container {
+    max-width: 960px;
+    margin: 5rem auto 0;
+    overflow: hidden;
+}
+
+.logo {
+    width: 300px;
+}
+
+.btn {
+    display: inline-block;
+    padding: .4rem 1.5rem;
+    background-color: #f1c40f;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/* HEADER NAVBAR */
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    background-color: #eee;
+    color: #333;
+}
+
+#nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 2rem;
+}
+
+#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav-bar ul li {
+    padding: 1rem 2rem;
+}
+
+#nav-bar ul li a {
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.message-box #form {
+    margin: 1.5rem;
+    padding: .8rem;
+    text-align: center;
+}
+
+.message-box #form h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.message-box #form input {
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding: .4rem;
+    margin-bottom: 1rem;
+}
+
+.message-box #form input[type='submit'] {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 900;
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+
+.message-box #form input[type='submit']:hover {
+    background-color: #FF8C00;
+}
+
+#features {
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#features .feature {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+#features .feature i {
+    color: #FF8C00;
+    margin-right: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+#features .feature div {
+    padding: 1rem;
+    margin-left: 3rem;
+}
+
+#features .feature div h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#how_it_works {
+    padding: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+#how_it_works #video {
+    width: 560;
+    height: 315;
+}
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0.2rem;
+}
+
+.price-box {
+    border: 3px solid #333;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.price-box:first-child {
+    margin-right: 1.2rem;
+}
+
+.price-box:last-child {
+    margin-left: 1.2rem;
+}
+
+.price-box h3 {
+    background-color: #ddd;
+    font-size: 1.05rem;
+    padding: 1.3rem;
+}
+
+.price-box h2 {
+    padding: 1rem;
+}
+
+.price-box p {
+    padding: 0 4rem 1rem;
+}
+
+.price-box .btn {
+    display: inline-block;
+    margin: 1rem;
+    display: inline-block;
+    padding: .4rem 1.5rem;
+    background-color: #f1c40f;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+#main-footer {
+    background-color: #ccc;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#main-footer div a {
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+#kaushik {
+    text-decoration: underline;
+    color: #333;
+}
+
+/* TABLET AND MOBILE */
+
+@media (max-width: 800px) {
+    #header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 15%;
+        background-color: #eee;
+        color: #333;
+    }
+
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem 0.3rem;
+    }
+
+    #nav-bar ul li {
+        padding: 1rem 1rem;
+    }
+
+    .message-box #form h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #features .feature {
+        flex-direction: column;
+    }
+
+    #features .feature div {
+        padding: 1rem;
+        margin: .5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #how_it_works {
+        padding: 1rem;
+    }
+
+    #how_it_works #video {
+        width: 80%;
+        height: 30%;
+    }
+
+    #pricing {
+         flex-direction: column;
+    }
+
+    #pricing .price-box {
+        margin: 1rem;
+    }
+
+    .price-box:first-child {
+        margin-right: 0;
+    }
+    
+    .price-box:last-child {
+        margin-left: 0;
+    }
+
+    #main-footer {
+        padding: 2.5rem .5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-footer .my-name {
+        margin: 1rem 0;
+    }
+}
